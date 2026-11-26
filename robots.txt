@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://byteings.github.io/Cleandesk/sitemap.xml
+Sitemap: https://byteings.github.io/Cleandesk-site/sitemap.xml
