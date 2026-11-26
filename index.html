@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanDesk for Windows</title>
+  <meta name="description" content="CleanDesk is an offline Windows desktop app for organizing files, finding duplicates, and managing storage with safe, reviewable actions." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="CleanDesk for Windows" />
+  <meta property="og:description" content="Organize files, review every move, undo safely, and keep your data local." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="app-icon.png" />
+  <link rel="icon" href="app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="CleanDesk home">
+        <img src="app-icon.png" alt="" class="brand-icon" width="28" height="28" />
+        <span>CleanDesk</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features">Features</a>
+        <a href="#safety">Safety</a>
+        <a href="#download">Download</a>
+        <a class="btn btn-primary btn-sm" href="downloads/CleanDesk_1.0.0_x64-setup.exe" download>Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Windows 10/11 · 64-bit · Offline</p>
+        <h1>File organization,<br>handled carefully.</h1>
+        <p class="lead">CleanDesk helps you sort files, find duplicates, and reclaim storage space. Every move is previewed before it runs, recorded locally, and can be undone when supported.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="downloads/CleanDesk_1.0.0_x64-setup.exe" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+            Download for Windows
+          </a>
+          <a class="btn btn-ghost" href="#features">Explore features</a>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>Version</dt><dd>1.0.0</dd></div>
+          <div><dt>Installer</dt><dd>NSIS, x64</dd></div>
+          <div><dt>Data</dt><dd>Local only</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal" style="--delay: 120ms">
+        <div class="window">
+          <div class="window-bar">
+            <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="window-title">CleanDesk</span>
+          </div>
+          <div class="window-body">
+            <aside class="window-side" aria-hidden="true">
+              <div class="side-item active">Overview</div>
+              <div class="side-item">Organize</div>
+              <div class="side-item">Browser</div>
+              <div class="side-item">Rules</div>
+              <div class="side-item">History</div>
+              <div class="side-item">Duplicates</div>
+            </aside>
+            <div class="window-main">
+              <div class="stat-grid">
+                <div class="stat">
+                  <span class="stat-label">Files scanned</span>
+                  <span class="stat-value" data-count="12480">12,480</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Organized</span>
+                  <span class="stat-value" data-count="3214">3,214</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-label">Reclaimable</span>
+                  <span class="stat-value">8.4 GB</span>
+                </div>
+              </div>
+              <div class="panel">
+                <div class="panel-head">
+                  <span>Organization preview</span>
+                  <span class="panel-badge">3 files</span>
+                </div>
+                <div class="preview-row">
+                  <span class="file-name">report.pdf</span>
+                  <span class="file-dest">Documents / report.pdf</span>
+                  <span class="status status-ready">Ready</span>
+                </div>
+                <div class="preview-row">
+                  <span class="file-name">photo.png</span>
+                  <span class="file-dest">Images / photo (1).png</span>
+                  <span class="status status-conflict">Conflict</span>
+                </div>
+                <div class="preview-row">
+                  <span class="file-name">setup.exe</span>
+                  <span class="file-dest">Installers / setup.exe</span>
+                  <span class="status status-ready">Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Features</p>
+        <h2>Built for everyday file management.</h2>
+        <p class="section-lead">The core tools are focused on practical tasks: organizing, reviewing, cleaning up, and understanding what uses your storage.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+          </div>
+          <h3>Organizer</h3>
+          <p>Preview file moves before applying them. CleanDesk sorts files into clear categories and resolves name conflicts with numbered filenames.</p>
+        </article>
+        <article class="feature-card reveal" style="--delay: 60ms">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 7.5-7 10-4-2.5-7-5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Safe actions</h3>
+          <p>Organization does not delete or overwrite files. Protected paths and junctions are blocked, and supported operations are recorded for undo.</p>
+        </article>
+        <article class="feature-card reveal" style="--delay: 120ms">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+          </div>
+          <h3>Built-in browser</h3>
+          <p>A lightweight in-app browser for quick lookups. When a site blocks embedding, you can open it in your default browser.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/><path d="M17 3v4h4"/><path d="M7 21v-4H3"/></svg>
+          </div>
+          <h3>Duplicate finder</h3>
+          <p>Detect exact duplicates with size prefiltering and SHA-256 verification. Selected copies can be moved to Recycle Bin, never permanently deleted.</p>
+        </article>
+        <article class="feature-card reveal" style="--delay: 60ms">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>
+          </div>
+          <h3>Storage insights</h3>
+          <p>Review file type distribution, large files, and folder-level stats to understand where space is being used before taking action.</p>
+        </article>
+        <article class="feature-card reveal" style="--delay: 120ms">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16"/><path d="M7 4v6"/><path d="M4 17h16"/><path d="M17 14v6"/></svg>
+          </div>
+          <h3>Custom rules</h3>
+          <p>Define rules by extension, name, size, or date. Preview rule impact before applying. Rules run only when you explicitly start them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="safety" class="section section-alt">
+      <div class="container safety-layout">
+        <div class="reveal">
+          <p class="eyebrow">Safety</p>
+          <h2>Designed for review before action.</h2>
+          <p class="section-lead">File operations should be predictable. CleanDesk keeps the workflow visible: scan, preview, confirm, record, and undo when possible.</p>
+        </div>
+        <div class="safety-list reveal" style="--delay: 80ms">
+          <div class="safety-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Preview first</strong><span>See planned destinations and conflicts before moving files.</span></div>
+          </div>
+          <div class="safety-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>No overwrites</strong><span>Existing files are kept; conflicts get unique names.</span></div>
+          </div>
+          <div class="safety-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Undo history</strong><span>Move operations are stored in local SQLite for supported undo.</span></div>
+          </div>
+          <div class="safety-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            <div><strong>Local data</strong><span>No account, no analytics, no cloud dependency. Works offline.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section container">
+      <div class="download-card reveal">
+        <div class="download-copy">
+          <p class="eyebrow">Download</p>
+          <h2>CleanDesk for Windows</h2>
+          <p class="section-lead">Download the 64-bit installer, run setup, and launch CleanDesk as a standalone desktop app.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="downloads/CleanDesk_1.0.0_x64-setup.exe" download>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+              Download installer
+            </a>
+          </div>
+          <p class="download-note">Unsigned builds may trigger Windows SmartScreen. Verify the source before choosing <strong>More info</strong> &gt; <strong>Run anyway</strong>.</p>
+        </div>
+        <dl class="download-meta">
+          <div class="meta-row"><dt>Version</dt><dd>1.0.0</dd></div>
+          <div class="meta-row"><dt>Platform</dt><dd>Windows 10/11 x64</dd></div>
+          <div class="meta-row"><dt>Format</dt><dd>NSIS installer (.exe)</dd></div>
+          <div class="meta-row"><dt>SHA-256</dt><dd class="hash">BCA7C8624DF820CDB0B2F676CFBA953E66A2C13FAC04D0BF4397426FB5D354C9</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand"><img src="app-icon.png" alt="" class="brand-icon" width="24" height="24" /><span>CleanDesk</span></div>
+      <p>Offline Windows file organizer. Built with Tauri, Rust, and React.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
